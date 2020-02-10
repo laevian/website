@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles2.css">
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+</head>
+<body>
+
+<table class="treegrid">
+<thead>
+<tr>
+	<th></th>
+	<th class="c2">Liquid % <img src="icon-02.svg" id="liqarrow"></th>
+	<th class="c3">Pressure <img src="icon-02.svg" id="presarrow"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr class="r1" data-structure="parent">
+	<td class="c1"><img src="icon-03.svg" class="tree">Parent Row</td>
+	<td class="c2">67.6</td>
+	<td class="c3 empty"></td>
+</tr>
+<tr class="r2 r1child" data-parent="r1" data-structure="child">
+	<td class="c1 child">Child Row 1</td>
+	<td class="c2">4.5</td>
+	<td class="c3">2.1</td>
+</tr>
+<tr class="r3 r1child" data-parent="r1" data-structure="child">
+	<td class="c1 child">Child Row 2</td>
+	<td class="c2">8.7</td>
+	<td class="c3">6.6</td>
+</tr>
+<tr class="r4" data-structure="toplevel">
+	<td class="c1">Toplevel Row</td>
+	<td class="c2">80.3</td>
+	<td class="c3 empty"></td>
+</tr>
+</tbody>
+
+</table>
+
+<div id="c2" class="nodisplay">
+<ul class="ddul">
+<li class="asc">Ascending</li>
+<li class="desc">Descending</li>
+</ul>
+</div>
+
+<div id="c3" class="nodisplay">
+<ul class="ddul">
+<li class="asc">Ascending</li>
+<li class="desc">Descending</li>
+</ul>
+</div>
+
+<div id="child_rc" class="nodisplay">
+<ul class="ddul">
+<li>Delete Row</li>
+<li>Remove from Group</li>
+</ul>
+</div>
+
+<div id="parent_rc" class="nodisplay">
+<ul class="ddul">
+<li>Delete Group</li>
+</ul>
+</div>
+
+<div id="toplevel_rc" class="nodisplay">
+<ul class="ddul">
+<li>Delete Row</li>
+</ul>
+</div>
+
+Workflow:<br>
+1. Right click on Parent Row and add child<br>
+2. Right click on Toplevel Row and add parent<br>
+3. Right click on Child 4 (formerly Toplevel Row) and delete row<br>
+<br>
+At any time, users can order ascending, descending, or edit/collapse rows.
+
+<ul class='custom-menu'>
+  <li data-action="edit">Edit Row</li>
+  <li data-action="addabove">Add Parent</li>
+  <li data-action="addbelow"><a href="p2.html">Add Child</a></li>
+  <li data-action = "remove">Delete Row</li>
+</ul>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

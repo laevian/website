@@ -1,0 +1,207 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI';
+	font-size: 16px;
+} 
+
+table
+{
+margin: 15px;
+border: 1px solid #cccccc;
+border-collapse: collapse;
+}
+
+.c2
+{
+text-align: right;
+}
+
+.c3
+{
+text-align: right;
+}
+
+.empty
+{
+background-color: #f2f2f2;
+}
+
+tbody tr:hover, tbody tr:hover > .empty
+{
+background-color: #eefeff;
+/*cursor: move;*/
+}
+
+td, th
+{
+padding: 6px;
+box-sizing: border-box;
+border: 1px solid #cccccc;
+}
+
+
+
+.child
+{
+padding-left: 25px;
+}
+
+thead
+{
+background-color: #ededed;
+}
+
+.tree
+{
+margin: 0 4px 0 0;
+}
+
+.nodisplay
+{
+display: none;
+}
+
+#c2
+{
+position: absolute;
+left: 157px;
+top: 52px;
+background-color: #ffffff;
+border: 2px solid #d1d1d1;
+box-sizing: border-box;
+padding: 10px;
+line-height: 25px;
+
+}
+
+#c2:after
+{
+content: '';
+position: absolute;
+width: 0; 
+height: 0;
+z-index: 1; 
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+border-bottom: 8px solid #ffffff;
+top: -8px;
+right: 38px;
+}
+
+#c2:before
+{
+content: '';
+position: absolute;
+width: 0; 
+height: 0; 
+z-index:0;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid #d1d1d1;
+top: -10px;
+right: 36px;
+}
+
+#c3
+{
+position: absolute;
+left: 255px;
+top: 52px;
+background-color: #ffffff;
+border: 2px solid #d1d1d1;
+box-sizing: border-box;
+padding: 10px;
+line-height: 25px;
+
+}
+
+#c3:after
+{
+content: '';
+position: absolute;
+width: 0; 
+height: 0;
+z-index: 1; 
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+border-bottom: 8px solid #ffffff;
+top: -8px;
+right: 38px;
+}
+
+#c3:before
+{
+content: '';
+position: absolute;
+width: 0; 
+height: 0; 
+z-index:0;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid #d1d1d1;
+top: -10px;
+right: 36px;
+}
+
+.ddul
+{
+display: inline-block;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+li
+{
+list-style: none;
+}
+
+.ddul li:hover
+{
+background-color: #eefeff;
+}
+
+#parent_rc
+{
+z-index: 10;
+position: absolute;
+background-color: #ffffff;
+border: 2px solid #d1d1d1;
+box-sizing: border-box;
+padding: 10px;
+}
+
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+}
+
+.custom-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.custom-menu li:hover {
+    background-color: #DEF;
+}
+
+ul
+{
+padding: 0;
+}
+
+a
+{
+color: initial;
+text-decoration: none;
+}

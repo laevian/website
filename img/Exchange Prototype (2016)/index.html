@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+</head>
+<body>
+<img src="img/scrollbar1.png" class="sb_1">
+<div class="container">
+<img src="img/topbar.png" class="topbar"><br>
+<img src="img/navpane.png" class="navpane">
+<div class="leftcol">
+	<img src="img/exchange_logo.png" class="logo">
+	<p class="user">Welcome<br>Alan Wexelblat</p>
+	<img src="img/filters_header.png" class="filters_header">
+	<img src="img/category_header.png">
+	<div class="category_filters">
+		<span class="filter_item"><img src="img/training_small.png">Training (1846)</span><br>
+		<span class="filter_item"><img src="img/models_small.png">Models (437)</span><br>
+		<span class="filter_item"><img src="img/blogsdiscussions_small.png">Blogs and Disc... (47)</span><br>
+		<span class="filter_item"><img src="img/events_small.png">Events (27)</span><br>
+		<span class="filter_item"><img src="img/tools_small.png">Tools (2)</span><br>
+	</div>
+	<img src="img/process_header.png">
+	<div class="process_filters">
+	<span class="filter_item">Chemicals (62)</span><br>
+	<span class="filter_item">Oil and Gas (56)</span><br>
+	<span class="filter_item">Refining (54)</span><br>
+	<span class="filter_item">Petrochemicals (1)</span><br>
+	<span class="filter_item">Polymers (1)</span><br>
+	<span class="filter_item">Specialty Chemicals a... (1)</span><br>
+	</div>
+</div>
+
+<div class="centercol">
+	<div class="search">
+		<input type="text" class="input"></input><img src="img/search_button.png" class="search_button">&nbsp;&nbsp; Sort By
+		<select name="sort_types">
+		<option value="Relevance">Relevance</option>
+		</select>
+	</div>
+	<span>Search Results</span><br>
+	<img src="img/exchange_x_animation_no_glow.gif" class="spinner">
+	<div class="search_results">
+		<div class="result_wrapper">
+			<div class="result_item">
+				<div class="result_hover">
+					<img src="img/run.png" class="run">
+					<img src="img/training_small.png" class="result_small_training">
+					<span class="valign_center">Click for Preview</span>
+				</div>
+				<img src="img/training_large.png">
+				<div class="description"><b>Distillation Design</b><br>
+				Distillation Design provides complete, up-to-date coverage of the principles and practical aspects of designing this important industrial process...</div>
+			</div>
+		
+		<div class="result_popup nodisplay" id="RP1">
+			<div class="popup_lc">
+				<img src="img/training_medium.png">
+			</div>
+			<div class="popup_cc">
+			<span class="popup_title">Distillation Design</span>
+			<p>Distillation Design provides complete, up-to-date coverage of the principles and practical aspects of designing this important industrial process for the food, chemical, pharmaceutical, petrochemical...<br><a>View Full Article...</a></p>
+			</div>
+			<div class="popup_rc">
+			<ul class="more_data">
+				<li><span class="align_left">Author</span><span class="align_right">Henry Z. Kitzer</span></li>
+				<li><span class="align_left">Organization</span><span class="align_right">AspenTech</span></li>
+				<li><span class="align_left">Type</span><span class="align_right">Training</span></li>
+				<li><span class="align_left">Source</span><span class="align_right">Textbook Archives</span></li>
+				<li><span class="align_left">Uploaded</span><span class="align_right">5/20/2014</span></li>
+				<li><span class="align_left">Cost</span><span class="align_right">Free</span></li>
+			</ul>
+			</div>
+			<div class="overhang">
+			</div>
+			<div class="popup_collapse">
+			<img src="img/close_arrow.png">
+			</div>
+		</div>
+			
+		</div>
+		<div class="result_wrapper"><div class="result_item">
+				<div class="result_hover">
+					<img src="img/run.png" class="run">
+					<img src="img/training_small.png" class="result_small_training">
+					<span class="valign_center">Click for Preview</span>
+				</div>
+		<img src="img/training_large.png"><div class="description"><b>Distillation Operation</b><br>
+		There are many books that discuss distillation, but there is only one that concentrates on giving readers practical guidelines for operation...</div></div>
+		
+		<div class="result_popup nodisplay" id="RP2">
+			<div class="popup_lc">
+				<img src="img/training_medium.png">
+			</div>
+			<div class="popup_cc">
+			<span class="popup_title">Distillation Operation</span>
+			<p>There are many books that discuss distillation, but there is only one that concentrates on giving readers practical guidelines for operation, troubleshooting and control. Distillation Operation is that book.<br><a>View Full Article...</a></p>
+			</div>
+			<div class="popup_rc">
+			<ul class="more_data">
+				<li><span class="align_left">Author</span><span class="align_right">Henry Z. Kitzer</span></li>
+				<li><span class="align_left">Organization</span><span class="align_right">AspenTech</span></li>
+				<li><span class="align_left">Type</span><span class="align_right">Training</span></li>
+				<li><span class="align_left">Source</span><span class="align_right">Textbook Archives</span></li>
+				<li><span class="align_left">Uploaded</span><span class="align_right">5/20/2014</span></li>
+				<li><span class="align_left">Cost</span><span class="align_right">Free</span></li>
+			</ul>
+			</div>
+			<div class="overhang">
+			</div>
+			<div class="popup_collapse">
+			<img src="img/close_arrow.png">
+			</div>
+		</div>
+		</div>
+		
+		<div class="result_wrapper">
+			<div class="result_item">
+				<div class="result_hover">
+					<img src="img/run.png" class="run">
+					<img src="img/training_small.png" class="result_small_training">
+					<span class="valign_center">Click for Preview</span>
+				</div>
+			<img src="img/training_large.png">
+				<div class="description"><b>Reactive Distillation Design and Control</b><br>
+				Reactive Distillation Design and Control... After an overview of the fundamentals, limitations, and scope of reactive distillation, this book uses...</div>
+			</div>
+			
+			<div class="result_popup nodisplay" id="RP3">
+			<div class="popup_lc">
+				<img src="img/training_medium.png">
+			</div>
+			<div class="popup_cc">
+			<span class="popup_title">Reactive Distillation Design and Control</span>
+			<p>After an overview of the fundamentals, limitations, and scope of reactive distillation, this book uses rigorous models for steady-state design and  dynamic analysis of different types of reactive...<br><a>View Full Article...</a></p>
+			</div>
+			<div class="popup_rc">
+			<ul class="more_data">
+				<li><span class="align_left">Author</span><span class="align_right">Henry Z. Kitzer</span></li>
+				<li><span class="align_left">Organization</span><span class="align_right">AspenTech</span></li>
+				<li><span class="align_left">Type</span><span class="align_right">Training</span></li>
+				<li><span class="align_left">Source</span><span class="align_right">Textbook Archives</span></li>
+				<li><span class="align_left">Uploaded</span><span class="align_right">5/20/2014</span></li>
+				<li><span class="align_left">Cost</span><span class="align_right">Free</span></li>
+			</ul>
+			</div>
+			<div class="overhang">
+			</div>
+			<div class="popup_collapse">
+			<img src="img/close_arrow.png">
+			</div>
+		</div>
+		</div>
+		
+		<div class="result_wrapper">
+			<div class="result_item">
+				<div class="result_hover">
+					<img src="img/run.png" class="run">
+					<img src="img/training_small.png" class="result_small_training">
+					<span class="valign_center">Click for Preview</span>
+				</div>
+			<img src="img/training_large.png">
+				<div class="description"><b>Distillation Design and Control using Aspen Simulation</b><br>
+				As the search for new energy sources grows ever more urgent, distillation remains at the forefront among separation methods in the chemical, petr...</div>
+			</div>
+			
+			<div class="result_popup nodisplay" id="RP4">
+				<div class="popup_lc">
+					<img src="img/training_medium.png">
+				</div>
+				<div class="popup_cc">
+				<span class="popup_title">Distillation Design and Control using Aspen Simulation</span>
+				<p>As the search for new energy sources grows ever more urgent, distillation remains at the forefront among separation methods in the chemical, petroleum, and energy industries.<br><a>View Full Article...</a></p>
+				</div>
+				<div class="popup_rc">
+				<ul class="more_data">
+					<li><span class="align_left">Author</span><span class="align_right">William L. Luyben</span></li>
+					<li><span class="align_left">Organization</span><span class="align_right">AspenTech</span></li>
+					<li><span class="align_left">Type</span><span class="align_right">Training</span></li>
+					<li><span class="align_left">Source</span><span class="align_right">Textbook Archives</span></li>
+					<li><span class="align_left">Uploaded</span><span class="align_right">5/20/2014</span></li>
+					<li><span class="align_left">Cost</span><span class="align_right">Free</span></li>
+				</ul>
+				</div>
+				<div class="overhang">
+				</div>
+				<div class="popup_collapse">
+				<img src="img/close_arrow.png">
+				</div>
+			</div>
+		</div>
+		
+		<div class="result_wrapper">
+			<div class="result_item">
+				<div class="result_hover">
+					<img src="img/run.png" class="run">
+					<img src="img/training_small.png" class="result_small_training">
+					<span class="valign_center">Click for Preview</span>
+				</div>
+			<img src="img/training_large.png">
+				<div class="description"><b>Troubleshooting Distillation Columns in Aspen HYSYS</b><br>
+				Problem Statement: What steps should be considered if there are difficulties in converging a distillation column or obtaining the required performance...</div>
+			</div>
+			
+			<div class="result_popup nodisplay" id="RP5">
+				<div class="popup_lc">
+					<img src="img/training_medium.png">
+				</div>
+				<div class="popup_cc">
+				<span class="popup_title">Troubleshooting Distillation Columns in Aspen HYSYS</span>
+				<p>Problem Statement: What steps should be considered if there are difficulties in converging a distillation column or obtaining the required performance from the column? Solution: If the column is not...<br><a>View Full Tech Tip...</a></p>
+				</div>
+				<div class="popup_rc">
+				<ul class="more_data">
+					<li><span class="align_left">Solution Type</span><span class="align_right">Tech Tips</span></li>
+					<li><span class="align_left">Organization</span><span class="align_right">AspenTech</span></li>
+					<li><span class="align_left">Type</span><span class="align_right">Training</span></li>
+					<li><span class="align_left">Solution ID</span><span class="align_right">126341</span></li>
+					<li><span class="align_left">Uploaded</span><span class="align_right">8/29/2014</span></li>
+					<li><span class="align_left">Cost</span><span class="align_right">Free</span></li>
+				</ul>
+				</div>
+				<div class="overhang">
+				</div>
+				<div class="popup_collapse">
+				<img src="img/close_arrow.png">
+				</div>
+			</div>
+			
+		</div>
+		<div class="result_wrapper">
+			<div class="result_item">
+				<div class="result_hover">
+					<img src="img/run.png" class="run">
+					<img src="img/training_small.png" class="result_small_training">
+					<span class="valign_center">Click for Preview</span>
+				</div>
+			<img src="img/training_large.png">
+				<div class="description"><b>Tips and tricks for distillation column simulation</b><br>
+				Problem Statement: Have you ever felt frustrated not being able to converge a distillation column? Well, you are not alone. Columns are among the most...</div>
+			</div>
+			
+			<div class="result_popup nodisplay" id="RP6">
+				<div class="popup_lc">
+					<img src="img/training_medium.png">
+				</div>
+				<div class="popup_cc">
+				<span class="popup_title">Tips and tricks for distillation column simulation</span>
+				<p>Problem Statement: Have you ever felt frustrated not being able to converge a distillation column? Well, you are not alone. Columns are among the most difficult unit operations to simulate. Hopefully...<br><a>View Full Article...</a></p>
+				</div>
+				<div class="popup_rc">
+				<ul class="more_data">
+					<li><span class="align_left">Author</span><span class="align_right">Henry Z. Kitzer</span></li>
+					<li><span class="align_left">Organization</span><span class="align_right">AspenTech</span></li>
+					<li><span class="align_left">Type</span><span class="align_right">Training</span></li>
+					<li><span class="align_left">Source</span><span class="align_right">Textbook Archives</span></li>
+					<li><span class="align_left">Uploaded</span><span class="align_right">5/20/2014</span></li>
+					<li><span class="align_left">Cost</span><span class="align_right">Free</span></li>
+				</ul>
+				</div>
+				<div class="overhang">
+				</div>
+				<div class="popup_collapse">
+				<img src="img/close_arrow.png">
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="result_wrapper">
+			<div class="result_item">
+				<div class="result_hover">
+					<img src="img/run.png" class="run">
+					<img src="img/training_small.png" class="result_small_training">
+					<span class="valign_center">Click for Preview</span>
+				</div>
+			<img src="img/training_large.png">
+				<div class="description"><b>How to Change the Number of Stages in a Distillation Column</b><br>
+				Problem Statement: How does one change the number of stages in a distillation column? Solution: Two methodologies can be employed...</div>
+			</div>
+			
+			<div class="result_popup nodisplay" id="RP7">
+			<div class="popup_lc">
+				<img src="img/training_medium.png">
+			</div>
+			<div class="popup_cc">
+			<span class="popup_title">How to Change the Number of Stages in a Distillation Column</span>
+			<p>Problem Statement: How does one change the number of stages in a distillation column? Solution: Two methodologies can be employed; change the total number of stages by supplying a new value in the "Num...<br><a>View Full Article...</a></p>
+			</div>
+			<div class="popup_rc">
+			<ul class="more_data">
+				<li><span class="align_left">Author</span><span class="align_right">Henry Z. Kitzer</span></li>
+				<li><span class="align_left">Organization</span><span class="align_right">AspenTech</span></li>
+				<li><span class="align_left">Type</span><span class="align_right">Training</span></li>
+				<li><span class="align_left">Source</span><span class="align_right">Textbook Archives</span></li>
+				<li><span class="align_left">Uploaded</span><span class="align_right">5/20/2014</span></li>
+				<li><span class="align_left">Cost</span><span class="align_right">Free</span></li>
+			</ul>
+			</div>
+			<div class="overhang">
+			</div>
+			<div class="popup_collapse">
+			<img src="img/close_arrow.png">
+			</div>
+		</div>
+			
+			
+		</div>
+	</div> <!---end search results-->
+	
+	
+	
+	<div class="pagination">1 - 30 of 348 <span class="links"><b>1</b> 2 3 4 5 ... ></span></div>
+</div>
+
+<div class="rightcol">
+		<span class="request_content">Request New Content</span>
+	<div class="learn_about">
+		<img src="img/learnabout.png">
+		<ul class="la_items">
+		<li class="la_item" id="LAI1">Introduction to HYSYS Dynamics</li>
+		<li class="la_item" id="LAI2">Dynamics and Process Control</li>
+		<li class="la_item" id="LAI3">Refining Reactors</li>
+		<li class="la_item" id="LAI4">Columns</li>
+		<li class="la_item" id="LAI5">Dynamics for Pressure Changes</li>
+		</ul>
+	</div>
+	<div class="related_features">
+		<img src="img/relatedfeatures.png">
+		<ul class="rf_items">
+		<li class="rf_item" id="RFI1">Dynamics</li>
+		<li class="rf_item" id="RFI2">Flare System Analysis</li>
+		<li class="rf_item" id="RFI3">Relief Sizing</li>
+		<li class="rf_item" id="RFI4">Aspen PIMS</li>
+		</ul>
+	</div>
+</div>
+<img src="img/bottombar.png" class="bb">
+<img src="img/rightbar.png" class="rb">
+</div> <!--- end container -->
+<div class="filterrect" id="0"></div>
+<div class="hiddentext"></div>
+<img src="img/filterimage.png" class="filterimage nodisplay">
+
+<div class="la_slideout" id="LA1">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="la_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="la_slideout" id="LA2">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="la_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="la_slideout" id="LA3">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="la_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="la_slideout" id="LA4">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="la_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="la_slideout" id="LA5">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="la_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="rf_slideout" id="RF1">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="rf_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="rf_slideout" id="RF2">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="rf_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="rf_slideout" id="RF3">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="rf_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+<div class="rf_slideout" id="RF4">
+<div class="slideout_leftcol"><span class="slideout_header">Summary</span>
+<p class="summary">
+Analyze, size, and document PSVs directly in Aspen HYSYS. Now you can perform pressure safety valve (PSV) design analysis, sizing, and documentation from within the process simulation, reducing the time spent.
+</p>
+<a>View Group Content</a></div>
+<div class="slideout_rightcol">
+<div class="rf_ulcontainer">
+<span class="slideout_contents">Contents</span>
+<ul>
+<li>CBT Getting Started with HYSYS Dynamics V8 <span class="content_type">(Video)</span></li>
+<li>Jump Start Guide to using Aspen HYSYS Dynamics With Columns <span class="content_type">(Model)</span></li>
+<li>Jump Start Guide to Compressor Modeling in Aspen HYSYS Dynamics <span class="content_type">(Model)</span></li>
+<li>Application areas and benefits of using Aspen HYSYS Dynamics <span class="content_type">(Documentation)</span></li>
+<li>Are there any guidelines for converting Aspen HYSYS Dynamics cases from steady state to dynamics?</li>
+</ul>
+</div>
+</div>
+<div class="slideout_close">
+<img src="img/right_arrow.png">
+</div>
+</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

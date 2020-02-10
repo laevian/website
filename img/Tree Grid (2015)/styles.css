@@ -1,0 +1,52 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI';
+	font-size: 16px;
+} 
+
+.treegrid
+{
+display: table;
+margin: 15px;
+}
+
+.row
+{
+display: table-row;
+}
+
+.row:hover
+{
+background-color: #d1f2f1;
+cursor: move;
+}
+
+.cell
+{
+display: table-cell;
+padding: 6px;
+box-sizing: border-box;
+border: 1px solid #cccccc;
+}
+
+#c02, #c04
+{
+padding-left: 25px;
+}
+
+#header
+{
+background-color: #ededed;
+}
+
+.plusicon
+{
+margin: 0 4px 0 0;
+}
+
+.minusicon
+{
+margin: 0 4px 0 0;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="popup_styles.css">
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+</head>
+<body>
+
+<!------------------------- begin uBar ---------------------------->
+
+<div id="ubar">
+<div id="ubar_inner">
+<div id="ubar_left">
+<img src="showhide.png" id="show_hide">
+<a href="../ubar with workspaces.html"><img src="home.png" id="logo" class="icon"></a>
+<input type="text" id="ubar_search_input"></input><img src="search.png" id="search_input_icon"><img src="responsive_search.png" id="resp_search_icon" class="icon">
+</div>
+<div id="ubar_title">Process Explorer</div>
+<div id="ubar_right">
+<div id="icons">
+<img src="alerts.png" id="alerts" class="icon">
+<img src="help.png" id="help" class="icon">
+<img src="profile.png" id="profile" class="icon">
+<img src="logout.png" id="logout" class="icon">
+<img src="dotdotdot.png" id="dots" class="icon">
+</div>
+</div>
+
+</div>
+</div>
+
+<!------------------------------- end uBar ----------------------------------->
+
+
+<!------------------------- begin aBar ---------------------------->
+<div id="shadow_container">
+<div id="abar">
+<div id="abar_inner">
+<div id="abar_left">
+</div>
+<div id="abar_title">Houston Refinery</div>
+<div id="abar_right">
+<!--<div id="icons">
+</div> -->
+</div>
+
+</div>
+</div>
+</div>
+
+<!------------------------------- end aBar ----------------------------------->
+
+<!------------ begin content ------------->
+
+<div id="content">
+<div class="popup">
+<div class="popup_header">OEE Configuration<img src="burgermenu.png" id="resp_menu_icon"><img src="popup_x.png" id="popup_x"></div>
+<div id="resp_popup_menu" class="nodisplay">
+<ul>
+<li class="selected">OEE Record</li>
+<li>Equipment</li>
+<li>Planned Downtime Reasons</li>
+<li>Unplanned Downtime Reasons</li>
+<li>Performance Loss Issues</li>
+<li>Quality Loss Issues</li>
+</ul>
+</div>
+<div class="popup_sidebar">
+<ul class="sidebar_menu">
+<li class="selected">OEE Record</li>
+<li>Equipment</li>
+<li>Planned Downtime Reasons</li>
+<li>Unplanned Downtime Reasons</li>
+<li>Performance Loss Issues</li>
+<li>Quality Loss Issues</li>
+</ul>
+</div>
+<div class="popup_content">
+Data Source:
+<select>
+  <option value="1">A1PE-Demo</option>
+  <option value="2">A1PE-Demo2</option>
+  <option value="3">A1PE-Demo3</option>
+  <option value="4">A1PE-Demo4</option>
+</select>
+<br>
+Name: <input type="text" name="name" class="OEE_name_search"><br>
+Ideal Run Rate: <span class="whitespace_right"><input type="text" name="run_rate" size="10"></span>
+<br class="hide">
+Units:
+<select>
+  <option value="1">lb/hr</option>
+  <option value="2">kg/hr</option>
+  <option value="3">lb/day</option>
+  <option value="4">kg/day</option>
+</select><br>
+<span class="sub_header">OEE Record Lists</span><img src="edit.png"><br>
+<div class="align_right">
+Equipment:<br>
+Planned Downtime Reasons:<br>
+Unplanned Downtime Reasons:<br>
+Performance Loss Issues:<br>
+Quality Loss Issues:<br>
+</div>
+<div class="align_left">
+Sample - Equip.<br>
+Sample - Planned<br>
+Sample - Unplanned<br>
+Sample - Perform.<br>
+Sample - Quality<br>
+</div>
+</div>
+<div class="popup_footer">
+<div class="popup_button">Apply</div>
+<div class="popup_button">OK</div>
+<div class="popup_button">Close</div>
+</div>
+</div>
+<div class="modal_overlay"></div>
+<img src="Process_Explorer_Image.png">
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

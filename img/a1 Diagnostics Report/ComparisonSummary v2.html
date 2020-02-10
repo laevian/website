@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<style>
+			body {
+				font-family:'Segoe UI', 'Tahoma', sans-serif;
+				color: #454545;
+				background-color: #f1f1f1;
+				}
+			div.ex {
+				width:65%;
+				padding:10px;
+				border:1px solid gray;
+				margin:auto;
+				background-color: #ffffff;
+				}
+			h1 {
+				color:#454545;
+				font-weight: 300;
+				display: inline-block;
+				margin-bottom: 40px;
+				vertical-align: middle;
+				}
+			h2 {
+				font-size: 20px;
+				vertical-align: middle;
+				height: 30px;
+				font-weight: 400;
+				color:white;
+				background-color:#3667b1;
+				padding-left: 10px;
+				box-sizing: border-box;
+				display: inline-block;
+				margin-bottom: 50px;
+				width: 100%;
+				margin-top: 0;
+				}
+			h3 {
+				margin: -20 0 20 0;
+				font-weight: 500;
+				font-size: 16px;
+				}
+			.green {
+				color:#30c030;
+				font-weight: 500;
+				}
+			.lightSalmon {
+				color:#c07830;
+				}
+			.red {
+				color:#c03030;
+				}
+			 td {
+				white-space: -o-pre-wrap;
+				white-space: pre-wrap;
+				white-space: -moz-pre-wrap;
+				white-space: -pre-wrap;
+				word-wrap: break-word;
+				vertical-align: top;
+				}
+			 table { 
+				table-layout: fixed;
+				cell-spacing: 0;
+				border-collapse: collapse;
+				border: 1px solid #cccccc;
+				margin-bottom: 50px;
+				
+				}
+			 tbody tr:nth-child(odd) {
+				background-color: #e6edef;
+				}
+			 tbody tr:first-child {
+				background-color: #dddddd;
+				font-weight: 500;
+				text-align: center;
+				}
+			.empty {
+				background-color: #dddddd;
+				height: 15px;
+				}
+			.bold {
+			font-weight: 500;
+			}
+		</style>
+		</head>
+		<body>
+	<div class="ex">
+	<h1>
+		<img src="aspenONE_blue.png"> Diagnostics Comparison Summary
+	</h1><br><br>
+			<table border="5" width="70%" cellpadding="4" cellspacing="3">
+			<col width="20%"><col width="80%">
+				<tr>
+					<td colspan=2>Report 1</td>
+				</tr>
+				<tr>
+					<td>Title</td><td>AspenDiagnosticsReport__2015-12-03__11-11-33</td>
+				</tr><tr>
+					<td>Date</td><td>12/3/2015 11:11:33 AM</td>
+				</tr><tr>
+					<td>Summary</td><td>7 tests ran [2 OK, 2 Warning, 3 Errors, 0 Not attempted yet, 0 Failed to run]</td>
+				</tr>
+			</table>
+			<table border="5" width="70%" cellpadding="4" cellspacing="3">
+			<col width="20%"><col width="80%">
+			<tr>
+				<td colspan=2>Report 2</td>
+			</tr>
+				<tr>
+					<td>Title</td><td>AspenDiagnosticsReport__2016-01-22__13-42-48</td>
+				</tr><tr>
+					<td>Date</td><td>1/22/2016 1:42:48 PM</td>
+				</tr><tr>
+					<td>Summary</td><td>3 tests ran [1 OK, 1 Warning, 1 Errors, 0 Not attempted yet, 0 Failed to run]</td>
+				</tr>
+			</table>
+		<br>
+
+		<br><h2>Result Summary Comparisons</h2>
+			<table border="5" width="100%" cellpadding="4" cellspacing="3">
+				<tr>
+					<td>Product Name</td><td>Script Name</td><td>Report 1</td><td>Report 2</td><td>Comparison</td>
+				</tr><tr>
+					<td class="textCenter">Aspen Local Security V8.7</td><td class="textCenter">Aspen Local Security V8.7 script</td><td class="textCenter">Fail</td><td class="textCenter">Fail</td><td class="textCenter"><font color="red">Differences exist</font></td>
+				</tr><tr>
+					<td class="textCenter">Aspen Simulation Workbook V8.6</td><td class="textCenter">Aspen Simulation Workbook V8.6 script</td><td class="textCenter">Pass</td><td class="textCenter">Pass</td><td class="textCenter"><font color="red">Differences exist</font></td>
+				</tr><tr>
+					<td class="textCenter">SLM Tools V8.8</td><td class="textCenter">SLM Tools V8.8 script</td><td class="textCenter">Warning</td><td class="textCenter">Warning</td><td class="textCenter"><font color="green">Match</font></td>
+				</tr><tr>
+					<td class="textCenter">General test script</td><td class="textCenter">General Test 1</td><td class="textCenter">Fail</td><td class="textCenter">NotApplicable</td><td class="textCenter"><font color="lightSalmon">One or both of the reports are null</font></td>
+				</tr><tr>
+					<td class="textCenter">General test script</td><td class="textCenter">Aspen Sample Diagostics script (ERR Result)</td><td class="textCenter">Fail</td><td class="textCenter">NotApplicable</td><td class="textCenter"><font color="lightSalmon">One or both of the reports are null</font></td>
+				</tr><tr>
+					<td class="textCenter">General test script</td><td class="textCenter">Aspen Sample Diagostics script (All OK Result)</td><td class="textCenter">Pass</td><td class="textCenter">NotApplicable</td><td class="textCenter"><font color="lightSalmon">One or both of the reports are null</font></td>
+				</tr><tr>
+					<td class="textCenter">General test script</td><td class="textCenter">Aspen Sample Diagostics script (WARNING Result)</td><td class="textCenter">Warning</td><td class="textCenter">NotApplicable</td><td class="textCenter"><font color="lightSalmon">One or both of the reports are null</font></td>
+				</tr>
+			</table>
+		
+		</div>
+	</body>
+</html>

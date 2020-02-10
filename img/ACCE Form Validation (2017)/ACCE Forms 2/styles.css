@@ -1,0 +1,69 @@
+body
+{
+	margin: 0;
+	padding: 20px;
+	font-family: 'Segoe UI';
+	font-size: .8em;
+	color: #333333;
+}
+
+table
+{
+	border: 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+
+tr:nth-of-type(even){
+  background-color: #eeeeee;
+}
+
+th {
+  background-color: #cccccc;
+}
+
+td {
+  padding: 5px 7px;
+  margin: 0;
+	box-sizing: border-box;
+	height: 45px;
+}
+
+th, td {
+	width: 180px;
+	box-sizing: border-box;
+}
+
+.red {
+	color: #da291c;
+}
+
+input {
+	width: 170px;
+	border: 1px solid #aaaaaa;
+}
+
+input:hover {
+	border: 1px solid #aaaaaa;
+}
+
+input:focus {
+	box-shadow: 0 0 2px rgb(4, 108, 182);
+}
+
+.req, .req:hover, .req:focus {
+	border: 2px solid rgb(218, 41, 28);
+}
+
+.eo, .eo:hover {
+	border: 2px solid rgb(238, 220, 0);
+}
+
+select {
+	min-width: 85px;
+}
+
+.green {
+	border: 2px solid rgb(76, 140, 43);
+}
